@@ -1,0 +1,50 @@
+.header{
+    width:100vw;
+    height: 10vh;
+    background-color: #021334;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .logo_container{
+    width: 20vw;
+    height: 100%;
+    /* border: 2px solid red; */
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-left: 5px;
+  }
+  .logo{
+    width: 60px;
+  }
+  .logo_letter{
+    width: 200px;
+  }
+  
+  .button_popover{
+    width: 8vw;
+    height: 50%;
+    background-color:#021334;;
+    color: white;
+    border: 2px solid white;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-right: 40px;
+    
+  }
+  .title{
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 30px;
+    margin-left: 30px;
+  }
+  .movies {
+    width: 96vw;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    /* border: 2px solid red; */
+    margin-left: 1vw;
+  
+  }

@@ -1,0 +1,21 @@
+.card{
+    padding: 20px;
+}
+
+.textContainer{
+    padding-top: 6px;
+}
+
+.container_movie{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin-top: 50px;
+    margin-left: 20px;
+  
+}
+.movie_poster{
+
+    width: 220px;
+ 
+}
