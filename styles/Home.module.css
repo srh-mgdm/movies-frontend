@@ -6,7 +6,7 @@
     justify-content: space-between;
     align-items: center;
   }
-  .logo_container{
+  .logoContainer{
     width: 20vw;
     height: 100%;
     /* border: 2px solid red; */
@@ -18,11 +18,11 @@
   .logo{
     width: 60px;
   }
-  .logo_letter{
+  .logoLetter{
     width: 200px;
   }
   
-  .button_popover{
+  .buttonPopover{
     width: 8vw;
     height: 50%;
     background-color:#021334;;
@@ -39,12 +39,10 @@
     margin-top: 30px;
     margin-left: 30px;
   }
-  .movies {
-    width: 96vw;
+  .moviesContainer {
+   
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
-    /* border: 2px solid red; */
-    margin-left: 1vw;
+    max-width: 100vw;
   
   }

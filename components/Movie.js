@@ -7,13 +7,11 @@ function Movie() {
         stars.push(<FontAwesomeIcon icon={faStar} key={i} />);
     }
     return (
-        <div className={styles.container_movie}>
-        <img className={styles.movie_poster} src='./poster.jpg' alt='Poster'/>
-        <p>Name</p>
-        <p>Description</p>
-        <div className={styles.movie_rating}>
-          {stars} (Vote count)
-        </div>
+        <div className={styles.card}>
+        <img className={styles.poster} src='./poster.jpg' alt='Poster'/>
+        <p className={styles.name}>Name</p>
+        <p className={styles.description}>Description</p>
+        <p className={styles.vote}>{stars} (Vote count)</p>
       </div>
     )
 }

@@ -22,17 +22,17 @@ function Home() {
   return (
     <div>
       <header className={styles.header}>
-        <div className={styles.logo_container}>
+        <div className={styles.logoContainer}>
           <img src="./logo.png" alt="Logo" className={styles.logo} />
-          <img src="./logoletter.png" alt="Logo letter" className={styles.logo_letter} />
+          <img src="./logoletter.png" alt="Logo letter" className={styles.logoLetter} />
         </div>
        
         <Popover  placement="bottom" content={content} title="Liked movies">
-            <Button className={styles.button_popover} >🤍 4 movie(s)</Button>
+            <Button className={styles.buttonPopover} >🤍 4 movie(s)</Button>
           </Popover>     
       </header>
       <div className={styles.title}>LAST RELEASES</div>
-      <div className={styles.movies}>
+      <div className={styles.moviesContainer}>
         {movies}
       </div>
      

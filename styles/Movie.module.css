@@ -1,21 +1,31 @@
-.card{
-    padding: 20px;
-}
+
 
 .textContainer{
     padding-top: 6px;
 }
 
-.container_movie{
+.card{
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
-    margin-top: 50px;
-    margin-left: 20px;
+    align-items: flex-start;
+    width: 220px;
+    margin: 10px;
+    /* border: 2px solid red; */
   
 }
-.movie_poster{
-
-    width: 220px;
+.poster{
+width:100%;
+    
  
+}
+.vote{
+    font-size: 12px;
+}
+.name{
+    font-weight: 600;
+    font-size: 14px;
+}
+.description{
+    font-size: 14px;
+    
 }
