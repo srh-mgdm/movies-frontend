@@ -36,8 +36,9 @@ function Home() {
 
  
   return (
-    <div>
-      <header className={styles.header}>
+    
+      <div className={styles.main}>
+        <header className={styles.header}>
         <div className={styles.logoContainer}>
           <img src="./logo.png" alt="Logo" className={styles.logo} />
           <img src="./logoletter.png" alt="Logo letter" className={styles.logoLetter} />
@@ -53,6 +54,8 @@ function Home() {
       </div>
      
     </div>
+      
+      
   );
 }
 
