@@ -8,14 +8,14 @@
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    width: 220px;
-    margin: 10px;
+    width: 240px;
+    margin: 20px;
     /* border: 2px solid red; */
   
 }
 .poster{
 width:100%;
-    
+border-radius: 10px 10px 0px 0px;
  
 }
 .vote{
@@ -26,6 +26,7 @@ width:100%;
     font-size: 14px;
 }
 .description{
+    font-weight: 300;
     font-size: 14px;
     
 }
