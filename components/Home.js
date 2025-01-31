@@ -27,7 +27,7 @@ function Home() {
   }
 
 
-  const content = likedMovies.map((data,i)=>{
+  const popoverContent = likedMovies.map((data,i)=>{
     return (
       <div className={styles.popoverContent}>
         <span>{data}</span>
@@ -65,7 +65,7 @@ function Home() {
           <img src="./logoletter.png" alt="Logo letter" className={styles.logoLetter} />
         </div>
        
-        <Popover  placement="bottom" content={content} title="Liked movies">
+        <Popover  placement="bottom" content={popoverContent} title="Liked movies">
             <Button className={styles.buttonPopover} >🤍 {likedMovies.length} movie(s)</Button>
           </Popover>     
       </header>
