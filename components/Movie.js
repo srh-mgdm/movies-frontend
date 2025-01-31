@@ -3,10 +3,11 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faStar, faHeart, faVideo } from '@fortawesome/free-solid-svg-icons';
 import {useState} from 'react'
 function Movie(props) {
-  const [isLiked, setIsLiked] = useState(false);
+
   const [personalNote, setPersonalNote] = useState(0);
   const [watchCount, setWatchCount] = useState(0);
-    console.log(props)
+  console.log(props)
+
     const stars=[];
     for (let i = 0; i < 10; i++) {
         if (i < props.voteAverage-1) {
@@ -27,9 +28,7 @@ function Movie(props) {
     const HandleWatchMovie=()=>{
       setWatchCount(watchCount+1)
     }
-    const HandleLikeMovie=()=>{
-      setIsLiked(!isLiked)
-    }
+   
     
     return (
         <div className={styles.card}>
@@ -51,9 +50,9 @@ function Movie(props) {
         <p className={styles.vote}>
           <FontAwesomeIcon
            icon={faHeart}
-           onClick={HandleLikeMovie}
+           onClick={() =>props.updateLikedMovies(props.name)}
            style={ {
-            color: isLiked ? '#e74c3c' : '#000', 
+            color: props.isLiked ? '#e74c3c' : '#000', 
           }}
            />
          
