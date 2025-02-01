@@ -56,5 +56,9 @@
   justify-content: space-between;
   align-items: center;
   margin-bottom: 10px;
+
 }
-  
+.icon{
+  margin-top:4px;
+  color: red;
+}

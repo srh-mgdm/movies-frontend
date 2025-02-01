@@ -29,9 +29,9 @@ function Home() {
 
   const popoverContent = likedMovies.map((data,i)=>{
     return (
-      <div className={styles.popoverContent}>
+      <div className={styles.popoverContent} key={i}>
         <span>{data}</span>
-        <FontAwesomeIcon icon={faXmark} key={i} style={{color:'black'}} onClick={() =>updateLikedMovies(data)}/>
+        <FontAwesomeIcon icon={faXmark}  className={styles.icon} onClick={() =>updateLikedMovies(data)}/>
       </div>
     )
 
@@ -66,7 +66,7 @@ function Home() {
         </div>
        
         <Popover  placement="bottom" content={popoverContent} title="Liked movies">
-            <Button className={styles.buttonPopover} >🤍 {likedMovies.length} movie(s)</Button>
+            <Button className={styles.buttonPopover} >🤍 {likedMovies.length} {likedMovies.length >1 ? "movies" : "movie"}</Button>
           </Popover>     
       </header>
       <div className={styles.title}>LAST RELEASES</div>
