@@ -32,7 +32,7 @@ function Movie(props) {
     
     return (
         <div className={styles.card}>
-        <img className={styles.poster} src={props.poster} alt={props.name}/>
+        <img className={styles.poster} src={props.poster ?`https://image.tmdb.org/t/p/w500/${props.poster}` : "poster.jpg"} alt={props.name || "Movie Poster"}/>
         <p className={styles.name}>{props.name}</p>
         <p className={styles.description}>{props.description}</p>
         <p className={styles.vote}>{stars} ({props.voteCount})</p>
