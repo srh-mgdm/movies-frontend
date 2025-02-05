@@ -74,7 +74,7 @@ function Home() {
         </div>
        
         <Popover  placement="bottom" content={popoverContent} title="Liked movies">
-            <Button className={styles.buttonPopover} >🤍 {likedMovies.length} {likedMovies.length >1 ? "movies" : "movie"}</Button>
+            <Button className={styles.buttonPopover} >❤️ {likedMovies.length} {likedMovies.length >1 ? "movies" : "movie"}</Button>
           </Popover>     
       </header>
       <div className={styles.title}>LAST RELEASES</div>

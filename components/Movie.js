@@ -43,9 +43,10 @@ function Movie(props) {
            onClick={HandleWatchMovie}
            style={ {
             color: watchCount > 0 ? '#e74c3c' : '#000', 
+            fontSize: '16px'
           }}
            />
-          ({watchCount})
+           <span> ({watchCount})</span>
         </p>
         <p className={styles.vote}>
           <FontAwesomeIcon
@@ -53,6 +54,7 @@ function Movie(props) {
            onClick={() =>props.updateLikedMovies(props.name)}
            style={ {
             color: props.isLiked ? '#e74c3c' : '#000', 
+            fontSize: '16px'
           }}
            />
          
